@@ -1,0 +1,9 @@
+C:\Users\rafael.cruz\Sc\masglobal\api\model\bin\Debug\netcoreapp2.1\model.deps.json
+C:\Users\rafael.cruz\Sc\masglobal\api\model\bin\Debug\netcoreapp2.1\model.dll
+C:\Users\rafael.cruz\Sc\masglobal\api\model\bin\Debug\netcoreapp2.1\model.pdb
+C:\Users\rafael.cruz\Sc\masglobal\api\model\obj\Debug\netcoreapp2.1\model.csproj.CoreCompileInputs.cache
+C:\Users\rafael.cruz\Sc\masglobal\api\model\obj\Debug\netcoreapp2.1\model.AssemblyInfoInputs.cache
+C:\Users\rafael.cruz\Sc\masglobal\api\model\obj\Debug\netcoreapp2.1\model.AssemblyInfo.cs
+C:\Users\rafael.cruz\Sc\masglobal\api\model\obj\Debug\netcoreapp2.1\model.dll
+C:\Users\rafael.cruz\Sc\masglobal\api\model\obj\Debug\netcoreapp2.1\model.pdb
+C:\Users\rafael.cruz\Sc\masglobal\api\model\obj\Debug\netcoreapp2.1\model.csprojAssemblyReference.cache

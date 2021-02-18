@@ -1,0 +1,16 @@
+C:\Users\rafael.cruz\Sc\masglobal\api\bl\bin\Debug\netcoreapp2.1\bl.deps.json
+C:\Users\rafael.cruz\Sc\masglobal\api\bl\bin\Debug\netcoreapp2.1\bl.dll
+C:\Users\rafael.cruz\Sc\masglobal\api\bl\bin\Debug\netcoreapp2.1\bl.pdb
+C:\Users\rafael.cruz\Sc\masglobal\api\bl\bin\Debug\netcoreapp2.1\dal.dll
+C:\Users\rafael.cruz\Sc\masglobal\api\bl\bin\Debug\netcoreapp2.1\model.dll
+C:\Users\rafael.cruz\Sc\masglobal\api\bl\bin\Debug\netcoreapp2.1\Newtonsoft.Json.dll
+C:\Users\rafael.cruz\Sc\masglobal\api\bl\bin\Debug\netcoreapp2.1\dal.pdb
+C:\Users\rafael.cruz\Sc\masglobal\api\bl\bin\Debug\netcoreapp2.1\model.pdb
+C:\Users\rafael.cruz\Sc\masglobal\api\bl\bin\Debug\netcoreapp2.1\Newtonsoft.Json.xml
+C:\Users\rafael.cruz\Sc\masglobal\api\bl\obj\Debug\netcoreapp2.1\bl.csprojAssemblyReference.cache
+C:\Users\rafael.cruz\Sc\masglobal\api\bl\obj\Debug\netcoreapp2.1\bl.csproj.CoreCompileInputs.cache
+C:\Users\rafael.cruz\Sc\masglobal\api\bl\obj\Debug\netcoreapp2.1\bl.AssemblyInfoInputs.cache
+C:\Users\rafael.cruz\Sc\masglobal\api\bl\obj\Debug\netcoreapp2.1\bl.AssemblyInfo.cs
+C:\Users\rafael.cruz\Sc\masglobal\api\bl\obj\Debug\netcoreapp2.1\bl.csproj.CopyComplete
+C:\Users\rafael.cruz\Sc\masglobal\api\bl\obj\Debug\netcoreapp2.1\bl.dll
+C:\Users\rafael.cruz\Sc\masglobal\api\bl\obj\Debug\netcoreapp2.1\bl.pdb
