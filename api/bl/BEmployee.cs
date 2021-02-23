@@ -37,12 +37,13 @@ namespace bl
         private void setEmployee(Employee dataEmployee)
         {
             IEmployee employee;
-            if (dataEmployee.monthlySalary > 0)
-            {
-                employee = new EmployeeMonthly();
-            } else
+            if (dataEmployee.contractTypeName == "HourlySalaryEmployee")
             {
                 employee = new EmployeeHourly();
+            }
+            else
+            {
+                employee = new EmployeeMonthly();
             }
             employee.setAnnualSalary(dataEmployee);
         }

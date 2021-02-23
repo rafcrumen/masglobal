@@ -4,54 +4,67 @@
             Employees
         </div>
         <div class='panel-body'>
-        <div class="input-group">
-            <input type="text" formControlName="id" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-            <button class="btn btn-outline-primary" (click)="getData()" type="button">Find</button>
+            <div class="input-group">
+                <input type="text" formControlName="id" class="form-control" placeholder="Employee id" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-primary" (click)="getData()" type="button">Find</button>
+                </div>
             </div>
-        </div>
-        <div *ngIf="employee?.id">
-            <dl>
-                <dd>Id</dd>
-                <dt>{{employee.id}}</dt>
-                <dd>name</dd>
-                <dt>{{employee.name}}</dt>
-                <dd>contractTypeName</dd>
-                <dt>{{employee.contractTypeName}}</dt>
-                <dd>roleName</dd>
-                <dt>{{employee.roleName}}</dt>
-                <dd>roleDescription</dd>
-                <dt>{{employee.roleDescription}}</dt>
-                <dd>annualSalary</dd>
-                <dt>{{employee.annualSalary}}</dt>
-            </dl>
-        </div>
-        <div *ngIf="employees?.length >0">
+            <div *ngIf="employee" class="alert alert-primary">
+                <dl [ngClass]="employee.contractTypeName == 'HourlySalaryEmployee' ? 'text-primary': 'text-success'">
+                    <dd>Id</dd>
+                    <dt>{{employee.id}}</dt>
+                    <dd>name</dd>
+                    <dt>{{employee.name}}</dt>
+                    <dd>contractTypeName</dd>
+                    <dt>{{employee.contractTypeName}}</dt>
+                    <dd>roleName</dd>
+                    <dt>{{employee.roleName}}</dt>
+                    <dd>roleDescription</dd>
+                    <dt>{{employee.roleDescription}}</dt>
+                    <dd *ngIf="employee.contractTypeName == 'HourlySalaryEmployee'">hourly Salary</dd>
+                    <dt *ngIf="employee.contractTypeName == 'HourlySalaryEmployee'">{{employee.hourlySalary | currency}}</dt>    
+                    <dd *ngIf="employee.contractTypeName == 'MonthlySalaryEmployee'">Monthly Salary</dd>
+                    <dt *ngIf="employee.contractTypeName == 'MonthlySalaryEmployee'"> {{employee.monthlySalary | currency}}</dt>                
+                    <dd>annualSalary</dd>
+                    <dt>{{employee.annualSalary | currency}}</dt>
+                </dl>
+            </div>
+            <div *ngIf="employees?.length >0">
                 <div class="col-sm-9 col-lg-10">
                     <table class='table table-striped table-hover'>
                     <thead>
                         <tr>
                             <th>Id</th>
-                            <th>name </th>                        
-                            <th>contractTypeName </th>                        
-                            <th>roleName </th>                        
-                            <th>roleDescription </th>                        
-                            <th>annualSalary</th>  
+                            <th>Name </th>                        
+                            <th>Contract Type Name </th>                        
+                            <th>Role Name </th>                        
+                            <th>Role Description </th>                        
+                            <th >Hourly Salary </th>                        
+                            <th >Monthly Salary </th>                        
+                            <th>Annual Salary</th>  
                         </tr>
                     </thead>
                     <tbody>
-                        <tr *ngFor='let emp of employees; let i = index'>
+                        <tr *ngFor='let emp of employees; let i = index' [ngClass]="emp.contractTypeName == 'HourlySalaryEmployee' ? 'text-primary': 'text-success' ">
                             <td>{{emp.id}}</td>
                             <td>{{emp.name}}</td>                        
                             <td>{{emp.contractTypeName}} </td>
                             <td>{{emp.roleName}} </td>                        
                             <td>{{emp.roleDescription}} </td>                        
-                            <td>{{emp.annualSalary}}</td>
+                            <td *ngIf="emp.contractTypeName == 'HourlySalaryEmployee'">{{ emp.hourlySalary | currency}}</td>
+                            <td *ngIf="emp.contractTypeName == 'MonthlySalaryEmployee'"></td>
+                            <td *ngIf="emp.contractTypeName == 'MonthlySalaryEmployee'">{{ emp.monthlySalary | currency}}</td>
+                            <td *ngIf="emp.contractTypeName == 'HourlySalaryEmployee'"></td>
+                     <td>{{emp.annualSalary | currency}}</td>
                         </tr>
                     </tbody>
                     </table>
                 </div>
+            </div>      
+            <div *ngIf="isShowMessage && employee == null && employees == null"  class="alert alert-warning" role="alert">
+                No data Found
             </div>
-        </div>        
+        </div>
     </div>
 </form>
